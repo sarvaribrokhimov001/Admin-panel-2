@@ -1,0 +1,78 @@
+.login {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: black;
+    font-family: 'Poppins';
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;  
+        padding-top: 50px;
+        margin-top: 20px;
+    }
+
+    &__title {
+        color: white;
+        font-size: 23px;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__icon__and__input {
+        display: flex;
+        position: relative;
+    }
+
+    &__icon {
+        margin-top: 7px;
+        position: absolute;
+        left: 35px;
+    }
+
+    &__username {
+        width: 240px;
+        height: 30px;
+        border-radius: 12px;
+        border: none;
+        margin: 0px 18px;
+        padding-left: 50px;
+    }
+
+    &__password {
+        width: 240px;
+        height: 30px;
+        border-radius: 12px;
+        border: none;
+        margin: 0px 18px; 
+        padding-left: 50px;
+    }
+
+    &__btn {
+        width: 200px;
+        height: 35px;
+        margin: auto;
+        border-radius: 10px;
+        border: none;
+        font-size: 17px;
+    }
+
+    &__btn:hover {
+        color: white;
+        background-color: black;
+        border: 3px solid white;
+    }
+
+    &__btn:active {
+        background-color: black;
+        color: cyan;
+        border: 3px solid cyan;
+    }
+
+    &__body {
+        background-color: cyan;
+        margin: 100px auto;
+    }
+}
