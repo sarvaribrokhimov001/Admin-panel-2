@@ -30,7 +30,6 @@ signout.addEventListener("click" , ()=> {
     window.location.href = "../index.html";
 });
 
-
 const elMenu = document.querySelector(".dashboard__menu__icon");
 const menuElements = document.querySelector(".dashboard__menu__elements");
 
@@ -78,7 +77,7 @@ fetch(API).then(response => response.json()).then(data => {
 
 function showData(data) {
 
-  data.map(({title , id , price , image , description , category} , index)=> {
+  data.map(({title , id , price , image , description , category})=> {
 
     tableBody.innerHTML+= `
     
@@ -96,8 +95,6 @@ function showData(data) {
                   </td>
                 </tr> 
     `
-
   });
-
   console.log(data);
 }
